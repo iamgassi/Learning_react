@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import {Greet} from "./components/Greet";
+import './App.css'
+import Welcome from "./components/Welcome";
+import Hello from "./components/Hello";
+import State from "./components/State";
+import ParentCom from "./components/ParentCom";
+import RefComponent from "./components/RefComponent";
+import PortalDom from "./components/PortalDom";
+import Count from "./components/HigherOrder/Count";
+import CountByFun from "./components/HigherOrder/CountByFun";
+import Hover from "./components/HigherOrder/Hover";
+import HoverByFun from "./components/HigherOrder/HoverByFun";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <>
+     <div className='App-header '>
+   {/* <Hello/>
+    <Greet/>
+    <Welcome/>
+    <State/>
+    <ParentCom/>
+    <RefComponent/>
+    <PortalDom/> */}
+    {/* <Count/> */}
+    <CountByFun/>
+    <HoverByFun/>
+    {/* <Hover/> */}
+  </div>
+  </>
   );
 }
 
