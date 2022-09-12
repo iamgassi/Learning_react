@@ -5,7 +5,7 @@ import Hello from "./components/Hello";
 import State from "./components/State";
 import ParentCom from "./components/ParentCom";
 import RefComponent from "./components/RefComponent";
-import PortalDom from "./components/PortalDom";
+import PortalDom from "./components/PortalDom"; 
 import Count from "./components/HigherOrder/Count";
 import CountByFun from "./components/HigherOrder/CountByFun";
 import Hover from "./components/HigherOrder/Hover";
@@ -23,8 +23,8 @@ function App() {
     <RefComponent/>
     <PortalDom/> */}
     {/* <Count/> */}
-    <CountByFun/>
-    <HoverByFun/>
+    <CountByFun data="From Count"/>
+    <HoverByFun hover="From Hover"/>
     {/* <Hover/> */}
   </div>
   </>

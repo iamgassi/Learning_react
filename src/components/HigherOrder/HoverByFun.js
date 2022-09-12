@@ -1,10 +1,10 @@
 import React from 'react'
 import HigherOrder from './HigherOrder'
 
-const HoverByFun = ({name, count,handleClick}) => {
+const HoverByFun = ({name, count,handleClick,hover}) => {
    
   return (
-   <button onMouseOver={handleClick}>{name} Hover {count} times</button>
+   <button onMouseOver={handleClick}>{name} Hover {count} times...{hover}</button>
   )
 }
 
