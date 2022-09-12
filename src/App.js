@@ -29,15 +29,18 @@ function App() {
     {/* <Hover/> */}
     {/* <CountByFun data="From Count"/>
     <HoverByFun hover="From Hover"/> */}
-    <Main 
-    data={(count,handleClick)=>(
+    <Main>
+  {(count,handleClick)=>(
         <Comp1 count={count} handleClick={handleClick} />
       )}
-    />
-     <Main data={(count,handleClick)=>(
-        <Comp2 count={count} handleClick={handleClick} />
+    </Main>
+     <Main >
+      
+     {(count,handleClick)=>(
+        <Comp2 count={count} onMouseOver={handleClick} />
       )}
-      />
+      </Main>
+     
       
    
   </div>

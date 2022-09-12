@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Comp2 = ({count,handleClick}) => {
+const Comp2 = ({count,onMouseOver}) => {
   return (
-    <button onMouseOver={handleClick} >{count}</button>
+    <button onMouseOver={onMouseOver} >{count}</button>
   )
 }
 

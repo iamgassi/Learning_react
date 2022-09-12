@@ -9,8 +9,8 @@ const Main = (props) => {
     }
   return (
     <>
-    {props.data(count,handleClick)}
-  
+    {props.children(count,handleClick)}
+ 
     </>
   )
 }
